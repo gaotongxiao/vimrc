@@ -40,3 +40,6 @@ let g:ycm_semantic_triggers =  {
 " let g:ycm_autoclose_preview_window_after_completion=1
 " f5 run python
 map <f5> :w<cr>:!python %<cr>
+nnoremap gd :YcmCompleter GoToDefinition<cr>
+nnoremap gr :YcmCompleter GoToReferences<cr>
+
