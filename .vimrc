@@ -10,6 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-cpp-enhanced-highlight'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 filetype plugin indent on
@@ -41,5 +43,5 @@ let g:ycm_semantic_triggers =  {
 " f5 run python
 map <f5> :w<cr>:!python %<cr>
 nnoremap gd :YcmCompleter GoToDefinition<cr>
-nnoremap gr :YcmCompleter GoToReferences<cr>
+nnoremap gr :YcmCompleter GoToDeclaration<cr>
 
